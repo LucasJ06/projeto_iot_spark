@@ -1,0 +1,2 @@
+# 🚀 Pipeline de Telemetria IoT com Apache Spark e Arquitetura Medallion
+Este projeto demonstra a construção de um pipeline de dados escalável utilizando Apache Spark no Databricks, processando 1 milhão de registros de telemetria de sensores industriais. O objetivo é transformar dados brutos de sensores em insights de negócio sobre falhas críticas, utilizando as melhores práticas de Engenharia de Dados.
