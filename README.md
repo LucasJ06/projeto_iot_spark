@@ -23,14 +23,14 @@ Python/SQL: Linguagens utilizadas para manipulação e consulta dos dados.
 1. Segurança ACID e Governança
 Utilizei o Delta Lake para garantir a integridade dos dados através de transações ACID. Isso permite:
 
-Time Travel: Capacidade de consultar versões anteriores da tabela e auditar mudanças através do comando DESCRIBE HISTORY.
+  Time Travel: Capacidade de consultar versões anteriores da tabela e auditar mudanças através do comando DESCRIBE HISTORY.
 
-Rollback: Proteção contra deleções acidentais ou falhas no pipeline.
+  Rollback: Proteção contra deleções acidentais ou falhas no pipeline.
 
 2. Performance em Big Data
-Particionamento: A Camada Bronze foi particionada pela coluna status, otimizando as consultas na Camada Silver.
+  Particionamento: A Camada Bronze foi particionada pela coluna status, otimizando as consultas na Camada Silver.
 
-Escalabilidade: O pipeline foi desenhado para processar 100 milhões de linhas em menos de 2 segundos.
+  Escalabilidade: O pipeline foi desenhado para processar 100 milhões de linhas em menos de 2 segundos.
 
 3. Lógica de Negócio (Camada Gold)
-A agregação final identifica os sensores mais problemáticos, filtrando registros onde a temperatura excede 45° em estado de erro.
+  A agregação final identifica os sensores mais problemáticos, filtrando registros onde a temperatura excede 45° em estado de erro.
